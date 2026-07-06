@@ -1,14 +1,14 @@
 # Day 5 - Optional GitHub OIDC Challenge
 
-Goal: Let GitHub Actions access AWS without storing long-lived access keys.
+This is optional. Try it only after the IAM user and group labs are done.
+
+Here, GitHub Actions will access AWS without storing long-lived access keys.
 
 ## Architecture
 
 `GitHub Actions -> OIDC token -> AWS IAM OIDC Provider -> AWS STS -> temporary credentials`
 
 ## Step 1 - Add OIDC Provider
-
-Open:
 
 Open: `AWS Console -> IAM -> Identity Providers -> Add Provider`
 
@@ -81,7 +81,7 @@ jobs:
       - run: aws s3 ls
 ```
 
-## Deliverables
+## Add These In Your Submission
 
 - `oidc/trust-policy.json`
 - `.github/workflows/aws-oidc-challenge.yml`

@@ -2,6 +2,10 @@
 
 Clean up test resources after completing the labs.
 
+## Why Cleanup Matters
+
+Cleanup is part of the challenge. It protects you from surprise AWS bills.
+
 ## Delete Test IAM Resources
 
 Delete these if you created them only for practice:
@@ -32,3 +36,5 @@ Before closing the week:
 - No secret keys are committed to GitHub.
 - Screenshots hide sensitive details.
 - Test users and roles are removed if no longer needed.
+
+If you are unsure whether something is safe to delete, ask before deleting it.

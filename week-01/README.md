@@ -5,21 +5,31 @@ Sessions: Jul 4-5, 2026
 Exam focus: SAA-C03 Domain 1 - Design Secure Architectures  
 Main pillar: Security
 
-Week 1 is about building a safe AWS foundation before touching EC2, S3, VPC,
-databases, or production-style architecture.
+This week is about basics. Before EC2, S3, VPC, or databases, first get the AWS
+account and IAM right.
 
-## Weekly Outcome
+## Start Here
 
-By the end of this week, you should be able to:
+Do not finish everything in one sitting. Go step by step.
 
-- Explain Regions, Availability Zones, and Edge Locations.
-- Explain the AWS Shared Responsibility Model.
-- Secure the AWS root user with MFA.
-- Create billing or budget alerts.
-- Explain IAM users, groups, roles, and policies.
-- Apply least privilege using read-only access.
-- Read a basic IAM JSON policy.
-- Understand why temporary credentials are safer than long-lived access keys.
+- First understand these words: Region, Availability Zone, root user, IAM,
+  policy.
+- Then do the account security lab.
+- Then create IAM users and groups.
+- If the optional GitHub OIDC task feels hard, skip it for now.
+- Submit whatever you complete with honest notes. Do not stay silent.
+
+## What You Should Know
+
+By the end of this week:
+
+- You know what Regions, Availability Zones, and Edge Locations mean.
+- You know what AWS secures and what you secure.
+- Your root user has MFA.
+- You have a billing or budget alert.
+- You know IAM users, groups, roles, and policies at a basic level.
+- You practiced least privilege using read-only access.
+- You can read a simple IAM JSON policy.
 
 ## 5-Day Practice Sequence
 
@@ -34,6 +44,16 @@ By the end of this week, you should be able to:
 | 07 | End of week | Submit your weekly work | [07-submission-format.md](./07-submission-format.md) |
 | 08 | End of week | Post learning update on LinkedIn | [08-linkedin-post.md](./08-linkedin-post.md) |
 | 09 | Before next week | Revise for quiz | [09-quiz-prep.md](./09-quiz-prep.md) |
+
+## Minimum Submission For Week 1
+
+Submit at least:
+
+- Root MFA proof
+- Billing or budget alert proof
+- One IAM group and one IAM user proof
+- One short note on what you understood and where you got stuck
+- LinkedIn post link
 
 ## Submission
 

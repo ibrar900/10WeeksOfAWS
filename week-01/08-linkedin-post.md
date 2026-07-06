@@ -1,6 +1,6 @@
 # Week 1 LinkedIn Plan
 
-Goal: Post daily progress and tag the community.
+Post daily progress and tag the community.
 
 Use this habit:
 

@@ -1,6 +1,19 @@
 # Day 4 - IAM Hands-On Lab
 
-Goal: Practice least privilege using IAM users, groups, and policies.
+Today, practice least privilege using IAM users, groups, and policies.
+
+## Practice Rule
+
+Create only read-only access in this lab. Do not give full access unless asked.
+
+Practice in this order:
+
+1. Create group.
+2. Attach read-only policy to group.
+3. Create user.
+4. Add user to group.
+5. Test allowed access.
+6. Test denied access.
 
 ## Lab 1 - S3 Read-Only Access
 
@@ -12,8 +25,9 @@ Create:
 
 Test:
 
+- Sign in as `learner-s3`.
 - Confirm the user can view S3.
-- Try one action that should fail.
+- Try creating or deleting something. It should fail.
 - Capture the `Access Denied` result.
 
 ## Lab 2 - EC2 Read-Only Access
@@ -26,6 +40,7 @@ Create:
 
 Test:
 
+- Sign in as `learner-ec2`.
 - Confirm the user can open the EC2 dashboard.
 - Confirm the user cannot create or terminate instances.
 
@@ -39,6 +54,7 @@ Create:
 
 Test:
 
+- Sign in as `learner-billing`.
 - Confirm the user can view the Billing Dashboard.
 - Confirm the user cannot manage unrelated AWS services.
 
@@ -63,9 +79,17 @@ Use this structure and replace `YOUR-BUCKET-NAME`:
 }
 ```
 
-Deliverables:
+Add these in your submission:
 
 - Screenshots of group, user, and attached policy.
 - Screenshot of allowed access.
 - Screenshot or note for denied access.
 - Policy JSON file in your submission folder.
+
+## If You Get Stuck
+
+Submit the part you completed. Add a note like:
+
+```text
+I completed S3 read-only access. I got stuck while testing EC2 denied access.
+```

@@ -1,16 +1,25 @@
 # Day 2 - IAM Basics
 
-Goal: Understand how AWS decides who can access what.
+Today, understand how AWS decides who can access what.
 
-Simple formula:
+Remember this:
 
 > Identity + Permissions = Access
+
+## IAM in Simple Words
+
+Think of IAM like an office ID card system:
+
+- User: one person with a login.
+- Group: a team of users with same access.
+- Role: temporary access for a task.
+- Policy: the rules that say allowed or denied.
 
 ## IAM User
 
 An IAM user is a named identity for a person or workload.
 
-Examples:
+For example:
 
 - `learner-s3` can get S3 read-only access.
 - `learner-ec2` can get EC2 read-only access.
@@ -29,23 +38,26 @@ Examples:
 - `EC2ReadOnlyGroup` uses `AmazonEC2ReadOnlyAccess`.
 - `BillingViewGroup` uses `AWSBillingReadOnlyAccess`.
 
-Best practice: attach policies to groups, then add users to groups.
+Better approach: attach policies to groups, then add users to groups.
 
 ## IAM Role
 
 An IAM role gives temporary credentials to a trusted identity.
 
-Common use cases:
+Used when:
 
 - AWS service accessing another AWS service.
 - GitHub Actions accessing AWS using OIDC.
 - A user switching into a role for temporary access.
 
+For Week 1, just remember this: roles are for temporary access. You do not need
+to master roles before doing the user and group labs.
+
 ## IAM Policy
 
 An IAM policy is a JSON document that defines permissions.
 
-Policy types:
+Types:
 
 - AWS managed policy: created and maintained by AWS.
 - Customer managed policy: created by you and reusable.
@@ -67,3 +79,6 @@ have.
 
 It does not grant permissions by itself. It only limits the maximum possible
 permissions.
+
+For now, remember only this: a permission boundary is a maximum limit. We will
+go deeper later.

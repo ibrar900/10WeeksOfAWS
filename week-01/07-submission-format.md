@@ -1,5 +1,7 @@
 # Week 1 Submission Format
 
+Do not wait for a perfect submission. Keep it simple and honest.
+
 Create this folder:
 
 ```text
@@ -47,6 +49,9 @@ Today I learned how IAM controls access in AWS.
 
 Identity + Permissions = Access.
 
+## Where I Got Stuck
+Write one problem you faced. If everything worked, write "No blocker".
+
 ## Screenshots Added
 - Root MFA
 - Billing alert
@@ -58,3 +63,10 @@ Identity + Permissions = Access.
 ## Key Takeaway
 Least privilege means giving only required permissions, nothing extra.
 ```
+
+## Minimum Accepted Submission
+
+- `README.md`
+- At least 2 screenshots
+- One learning note
+- One LinkedIn post link
