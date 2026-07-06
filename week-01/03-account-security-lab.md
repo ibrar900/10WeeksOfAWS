@@ -1,6 +1,6 @@
 # Day 3 - Account Security Lab
 
-Today, make your AWS account safe enough for the next 10 weeks.
+Goal: Create a safe AWS account foundation for the next 10 weeks.
 
 ## Before You Start
 
@@ -9,10 +9,8 @@ You need:
 - AWS account login
 - Mobile phone for MFA app
 - Access to your email
-- 20-30 minutes without rushing
 
-If you do not have an AWS account yet, watch the account creation video first.
-Then come back to this lab.
+If you do not have an AWS account yet then create it : https://aws.amazon.com/
 
 ## Lab 1 - Secure Root User
 
@@ -25,7 +23,7 @@ Steps:
 5. Stop using root user for daily work.
 6. Create an IAM admin user only if needed for regular work.
 
-Add these in your submission:
+Deliverables:
 
 - Screenshot of root MFA enabled.
 - Short note explaining why root user should not be used daily.
@@ -39,7 +37,7 @@ Steps:
 3. Create a cost budget, for example `$5`.
 4. Confirm the alert email or budget setup.
 
-Add these in your submission:
+Deliverables:
 
 - Screenshot of billing alert or budget alert.
 - Short note explaining why billing should be monitored from Day 1.
@@ -48,7 +46,7 @@ Add these in your submission:
 
 - Add a screenshot of where you got stuck.
 - Write 2-3 lines explaining the issue.
-- Ask in the community. Do not skip the whole week.
+- Ask in the community instead of skipping the whole week.
 
 ## Safety Note
 

@@ -1,29 +1,28 @@
 # Day 1 - Cloud Foundations
 
-Today, understand how AWS is organized and what AWS manages versus what you
+Goal: Understand how AWS is organized and what AWS manages versus what you
 manage.
 
 ## Before You Start
 
-Before opening AWS, write these answers in your own words:
+Before opening AWS, write answers in your own words:
 
-1. What is a Region?
-2. What is an Availability Zone?
-3. What is one thing AWS secures?
-4. What is one thing you must secure?
+1. What is a Region? --> 
+2. What is an Availability Zone? -->
+3. What is one thing AWS secures? -->
+4. What is one thing you must secure? -->
 
-Do not copy definitions. Simple words are fine.
 
 ## AWS Global Infrastructure
 
-AWS infrastructure is mainly built around:
+AWS infrastructure is built using:
 
 - Region: a geographic area where AWS has multiple data centers.
 - Availability Zone: an isolated data center location inside a Region.
 - Edge Location: a location used by services like CloudFront to serve users
   faster.
 
-For exam:
+Exam pointer:
 
 - Use multiple Availability Zones for high availability.
 - Use CloudFront and Edge Locations for low-latency content delivery.
@@ -50,7 +49,7 @@ Simple line:
 
 The root user owns the AWS account and has full access to everything.
 
-Keep this in mind:
+Best practices:
 
 - Enable MFA on root user.
 - Do not use root user for daily work.
