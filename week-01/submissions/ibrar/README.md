@@ -1,11 +1,7 @@
-# Week 1 Submission - Ibrar Mahammad
-..........
+# Week 1 Submission
 
 ## Name
-..........
 Ibrar Mahammad
-
-
 
 ## Tasks Completed
 - read the weekly content and watched all the AWS console menu and options and searchbar.
@@ -28,11 +24,10 @@ Ibrar Mahammad
 - learned how GitHub Actions accessing AWS using OIDC and AWS STS without access keys.
 
 ## LinkedIn Post
-................
+
 https://www.linkedin.com/posts/ibrar-mahammad-58489b26a_100daysofcloud-aws-iam-activity-9261942601667964928-uF_9?utm_source=share&utm_medium=member_desktop
 
 ## Topics Practiced
-...........
 - AWS account 
 - Root amd IAM MFA for security
 - IAM Users
@@ -67,7 +62,7 @@ Write one problem you faced. If everything worked, write "No blocker".
 Least privilege means giving only required permissions, nothing extra.
 
 LAB 1 - Secure Your AWS Account
-...............
+
 Goal: Create a safe AWS account foundation for the next 10 weeks.
 
 Steps:
@@ -109,7 +104,6 @@ Budget Alert
 ![alt text](<Monthly Cost Budget .png>)
 
 Where i Got Struck
-..................................
 
 Cloud watch Alert, Billing Alert, Budget Alert differences. how they work and how to create them.
 
@@ -223,6 +217,7 @@ learner-billing user cannot manage unrelated AWS services
 ![alt text](<Screenshot of denied action S3-1.png>)
 
 ## Lab 5 — Custom S3 Read-Only JSON Policy
+
 Goal: Read and create a basic JSON policy.
 
 Create a customer managed policy:
@@ -274,10 +269,49 @@ uccessfully listed all S3 buckets
 Successfully viewed objects in ibrar-s3-bucket.
 Successfully downloaded resume.pdf
 
+Denied action
+
+![alt text](<Denied action S3 put object.png>)
+
+- Uploading a file (s3:PutObject) was denied due to insufficient permissions.
+- Deleting an object (s3:DeleteObject) was denied because the IAM policy does not allow this action
 
 
+Optional Advanced Lab — Switch Role
+Goal: Understand role assumption and temporary access.
+
+Create role:
+
+Role name: TrainingReadOnlyRole
+Policy: ReadOnlyAccess
 
 
+Create a policy for an IAM user that allows assuming this role:
 
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "arn:aws:iam::ACCOUNT-ID:role/TrainingReadOnlyRole"
+    }
+  ]
+}
 
+Replace
+
+ACCOUNT-ID
+
+with your AWS account ID.
+
+Test:
+
+Log in as IAM user.
+Use Switch Role in AWS Console.
+Switch into TrainingReadOnlyRole.
+Verify role-based access.
+Deliverables:
+
+TrainingReadOnlyRole with ReadOnlyAccess
 
